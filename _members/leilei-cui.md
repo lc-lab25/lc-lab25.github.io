@@ -6,6 +6,7 @@ affiliation: Department of Mechanical Engineering, University of New Mexico
 order: 1
 current: true
 aliases:
+  - Leilei Cui
   - L. Cui
   - L Cui
 links:
