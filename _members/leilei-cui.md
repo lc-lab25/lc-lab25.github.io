@@ -5,9 +5,9 @@ role: principal-investigator
 affiliation: Department of Mechanical Engineering, University of New Mexico
 order: 1
 current: true
-# aliases:
-#   - L. Cui
-#   - L Cui
+aliases:
+  - L. Cui
+  - L Cui
 links:
   email: lcui@unm.edu
   linkedin: leilei-cui-0978b3179
