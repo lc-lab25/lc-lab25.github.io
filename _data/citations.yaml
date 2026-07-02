@@ -1,5 +1,35 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1109/TNNLS.2026.3675892
+  title: 'A Fully Data-Driven Value Iteration for Stochastic LQR: Convergence, Robustness,
+    and Stability'
+  authors:
+  - Leilei Cui
+  - Zhong-Ping Jiang
+  - Petter N. Kolm
+  - "Gr\xE9goire G. Macqueron"
+  publisher: IEEE Transactions on Neural Networks and Learning Systems
+  date: '2026-01-01'
+  link: https://doi.org/hb898s
+  orcid: 0000-0001-8031-7638
+  leilei-cui: true
+  updated: 2025-11-02
+  plugin: orcid.py
+  file: orcid-leilei.yaml
+- id: doi:10.48550/ARXIV.2603.26080
+  title: 'LQR for Systems with Probabilistic Parametric Uncertainties: A Gradient
+    Method'
+  authors:
+  - Leilei Cui
+  - Richard D. Braatz
+  publisher: arXiv
+  date: '2026-01-01'
+  link: https://doi.org/hb898t
+  orcid: 0000-0001-8031-7638
+  leilei-cui: true
+  updated: 2025-11-02
+  plugin: orcid.py
+  file: orcid-leilei.yaml
 - id: doi:10.1016/j.automatica.2024.111944
   title: 'Learning-based adaptive optimal control of linear time-delay systems: A
     value iteration approach'
@@ -11,22 +41,6 @@
   publisher: Automatica
   date: '2025-01-01'
   link: https://doi.org/g98xmv
-  orcid: 0000-0001-8031-7638
-  leilei-cui: true
-  updated: 2025-11-02
-  plugin: orcid.py
-  file: orcid-leilei.yaml
-- id: doi:10.48550/arXiv.2505.02970
-  title: 'A Fully Data-Driven Value Iteration for Stochastic LQR: Convergence, Robustness
-    and Stability'
-  authors:
-  - Leilei Cui
-  - Zhong-Ping Jiang
-  - Petter N. Kolm
-  - "Gr\xE9goire G. Macqueron"
-  publisher: arXiv
-  date: '2025-01-01'
-  link: https://doi.org/g98xmw
   orcid: 0000-0001-8031-7638
   leilei-cui: true
   updated: 2025-11-02
