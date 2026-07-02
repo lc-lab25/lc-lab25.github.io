@@ -330,7 +330,288 @@
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1000 1000" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">LC Lab animated network logo</title>
+  <desc id="logoDesc">
+    A blue, cyan, and green circular LC logo with a slowly rotating connected-node
+    network, pulsing nodes, moving light particles, and a subtle highlight sweep.
+  </desc>
+
+  <defs>
+    <lineargradient id="discGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2F66"></stop>
+      <stop offset="0.42" stop-color="#147BA8"></stop>
+      <stop offset="0.72" stop-color="#14B8B1"></stop>
+      <stop offset="1" stop-color="#078A5E"></stop>
+    </lineargradient>
+
+    <radialgradient id="discGlow" cx="38%" cy="25%" r="78%">
+      <stop offset="0" stop-color="#7FE8F2" stop-opacity=".30"></stop>
+      <stop offset=".42" stop-color="#2DB9D0" stop-opacity=".08"></stop>
+      <stop offset="1" stop-color="#001D37" stop-opacity=".38"></stop>
+    </radialgradient>
+
+    <lineargradient id="edgeGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".88"></stop>
+      <stop offset=".5" stop-color="#BFFBFF" stop-opacity=".62"></stop>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".88"></stop>
+    </lineargradient>
+
+    <lineargradient id="letterGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"></stop>
+      <stop offset="1" stop-color="#F1F7FA"></stop>
+    </lineargradient>
+
+    <lineargradient id="shimmerGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"></stop>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"></stop>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop>
+    </lineargradient>
+
+    <filter id="discShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <fedropshadow dx="0" dy="26" stddeviation="26" flood-color="#061827" flood-opacity=".30"></fedropshadow>
+    </filter>
+
+    <filter id="letterShadow" x="-30%" y="-30%" width="170%" height="180%">
+      <fedropshadow dx="18" dy="24" stddeviation="12" flood-color="#001C31" flood-opacity=".44"></fedropshadow>
+    </filter>
+
+    <filter id="nodeGlow" x="-250%" y="-250%" width="500%" height="500%">
+      <fegaussianblur stddeviation="6" result="blur"></fegaussianblur>
+      <femerge>
+        <femergenode in="blur"></femergenode>
+        <femergenode in="SourceGraphic"></femergenode>
+      </femerge>
+    </filter>
+
+    <filter id="softGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <fegaussianblur stddeviation="3.5" result="blur"></fegaussianblur>
+      <femerge>
+        <femergenode in="blur"></femergenode>
+        <femergenode in="SourceGraphic"></femergenode>
+      </femerge>
+    </filter>
+
+    <filter id="texture" x="-10%" y="-10%" width="120%" height="120%">
+      <feturbulence type="fractalNoise" basefrequency=".012" numoctaves="2" seed="8" result="noise"></feturbulence>
+      <fecolormatrix in="noise" type="saturate" values="0" result="mono"></fecolormatrix>
+      <fecomponenttransfer in="mono" result="faded">
+        <fefunca type="table" tablevalues="0 .09"></fefunca>
+      </fecomponenttransfer>
+      <feblend in="SourceGraphic" in2="faded" mode="soft-light"></feblend>
+    </filter>
+
+    <clippath id="discClip">
+      <circle cx="500" cy="500" r="430"></circle>
+    </clippath>
+
+    <path id="outerTrack" d="M 500 94 A 406 406 0 1 1 499.9 94" fill="none"></path>
+    <path id="innerTrack" d="M 500 150 A 350 350 0 1 0 499.9 150" fill="none"></path>
+
+    <!-- Portable vector letterforms: no web font required. -->
+    <path id="letterL" d="M230 310H360V590H475V710H230Z"></path>
+    <path id="letterC" fill-rule="evenodd" d="M795 335
+             A235 235 0 1 0 795 665
+             L700 570
+             A100 100 0 1 1 700 430
+             Z"></path>
+
+    <clippath id="lettersClip">
+      <use href="#letterL" xlink:href="#letterL"></use>
+      <use href="#letterC" xlink:href="#letterC"></use>
+    </clippath>
+  </defs>
+
+  <style>
+    .network-spin {
+      transform-origin: 500px 500px;
+      animation: spin 46s linear infinite;
+    }
+
+    .orbit-spin {
+      transform-origin: 500px 500px;
+      animation: spin-reverse 70s linear infinite;
+    }
+
+    .node-core {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: pulse 3.2s ease-in-out infinite;
+    }
+
+    .node:nth-of-type(2) .node-core { animation-delay: -.55s; }
+    .node:nth-of-type(3) .node-core { animation-delay: -1.10s; }
+    .node:nth-of-type(4) .node-core { animation-delay: -1.65s; }
+    .node:nth-of-type(5) .node-core { animation-delay: -2.20s; }
+    .node:nth-of-type(6) .node-core { animation-delay: -2.75s; }
+
+    .micro {
+      animation: micro-pulse 2.8s ease-in-out infinite;
+    }
+
+    .dash-ring {
+      animation: dash 10s linear infinite;
+    }
+
+    .shimmer {
+      animation: shimmer 5.6s ease-in-out infinite;
+    }
+
+    svg:hover .network-spin { animation-duration: 26s; }
+    svg:hover .orbit-spin { animation-duration: 38s; }
+    svg:hover .node-core { filter: url(#nodeGlow); }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes spin-reverse {
+      to { transform: rotate(-360deg); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: .98; }
+      50% { transform: scale(1.11); opacity: 1; }
+    }
+
+    @keyframes micro-pulse {
+      0%, 100% { opacity: .65; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes dash {
+      to { stroke-dashoffset: -180; }
+    }
+
+    @keyframes shimmer {
+      0%, 18% {
+        transform: translateX(-520px) skewX(-18deg);
+        opacity: 0;
+      }
+      35% { opacity: .8; }
+      52%, 100% {
+        transform: translateX(620px) skewX(-18deg);
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .network-spin,
+      .orbit-spin,
+      .node-core,
+      .micro,
+      .dash-ring,
+      .shimmer {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- Main disc -->
+  <g filter="url(#discShadow)">
+    <circle cx="500" cy="500" r="430" fill="url(#discGradient)"></circle>
+    <circle cx="500" cy="500" r="430" fill="url(#discGlow)"></circle>
+    <circle cx="500" cy="500" r="430" fill="none" stroke="#D9FFFF" stroke-opacity=".16" stroke-width="3"></circle>
+  </g>
+
+  <!-- Subtle interior depth -->
+  <g clip-path="url(#discClip)" filter="url(#texture)" opacity=".8">
+    <path d="M25 640C160 470 295 470 385 570S600 750 975 355" fill="none" stroke="#FFFFFF" stroke-opacity=".045" stroke-width="105"></path>
+  </g>
+
+  <!-- Counter-rotating data orbit -->
+  <g class="orbit-spin" opacity=".8">
+    <circle class="dash-ring" cx="500" cy="500" r="393" fill="none" stroke="url(#edgeGradient)" stroke-width="2" stroke-dasharray="7 18" stroke-linecap="round"></circle>
+  </g>
+
+  <!-- Rotating connected-node network -->
+  <g class="network-spin" stroke="url(#edgeGradient)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M500 130L775 245L855 505L765 760L500 860L225 755L140 500L220 250Z" stroke-width="7" stroke-opacity=".92"></path>
+
+    <path d="M500 130L500 76M500 130L420 91M500 130L580 91" stroke-width="6" stroke-opacity=".92"></path>
+    <path d="M855 505L907 505M855 505L888 438M855 505L889 574" stroke-width="6" stroke-opacity=".92"></path>
+    <path d="M500 860L500 920M500 860L422 902M500 860L578 902" stroke-width="6" stroke-opacity=".92"></path>
+    <path d="M140 500L87 500M140 500L109 435M140 500L107 567" stroke-width="6" stroke-opacity=".92"></path>
+
+    <g class="micro" fill="#F9FFFF" stroke="none">
+      <circle cx="500" cy="76" r="12"></circle>
+      <circle cx="420" cy="91" r="9"></circle>
+      <circle cx="580" cy="91" r="9"></circle>
+
+      <circle cx="907" cy="505" r="12"></circle>
+      <circle cx="888" cy="438" r="9"></circle>
+      <circle cx="889" cy="574" r="9"></circle>
+
+      <circle cx="500" cy="920" r="12"></circle>
+      <circle cx="422" cy="902" r="9"></circle>
+      <circle cx="578" cy="902" r="9"></circle>
+
+      <circle cx="87" cy="500" r="12"></circle>
+      <circle cx="109" cy="435" r="9"></circle>
+      <circle cx="107" cy="567" r="9"></circle>
+    </g>
+
+    <g class="node" transform="translate(500 130)">
+      <circle r="47" fill="#FFFFFF" fill-opacity=".15" stroke="none" filter="url(#nodeGlow)"></circle>
+      <circle class="node-core" r="39" fill="#F9FFFF" stroke="#FFFFFF" stroke-width="3"></circle>
+    </g>
+
+    <g class="node" transform="translate(775 245)">
+      <circle r="47" fill="#FFFFFF" fill-opacity=".15" stroke="none" filter="url(#nodeGlow)"></circle>
+      <circle class="node-core" r="39" fill="#F9FFFF" stroke="#FFFFFF" stroke-width="3"></circle>
+    </g>
+
+    <g class="node" transform="translate(765 760)">
+      <circle r="47" fill="#FFFFFF" fill-opacity=".15" stroke="none" filter="url(#nodeGlow)"></circle>
+      <circle class="node-core" r="39" fill="#F9FFFF" stroke="#FFFFFF" stroke-width="3"></circle>
+    </g>
+
+    <g class="node" transform="translate(500 860)">
+      <circle r="47" fill="#FFFFFF" fill-opacity=".15" stroke="none" filter="url(#nodeGlow)"></circle>
+      <circle class="node-core" r="39" fill="#F9FFFF" stroke="#FFFFFF" stroke-width="3"></circle>
+    </g>
+
+    <g class="node" transform="translate(225 755)">
+      <circle r="47" fill="#FFFFFF" fill-opacity=".15" stroke="none" filter="url(#nodeGlow)"></circle>
+      <circle class="node-core" r="39" fill="#F9FFFF" stroke="#FFFFFF" stroke-width="3"></circle>
+    </g>
+
+    <g class="node" transform="translate(220 250)">
+      <circle r="47" fill="#FFFFFF" fill-opacity=".15" stroke="none" filter="url(#nodeGlow)"></circle>
+      <circle class="node-core" r="39" fill="#F9FFFF" stroke="#FFFFFF" stroke-width="3"></circle>
+    </g>
+  </g>
+
+  <!-- Moving data particles -->
+  <g fill="#DFFFFF" filter="url(#softGlow)">
+    <circle r="8">
+      <animatemotion dur="8.5s" repeatcount="indefinite" rotate="auto">
+        <mpath href="#outerTrack" xlink:href="#outerTrack"></mpath>
+      </animatemotion>
+    </circle>
+
+    <circle r="5" opacity=".86">
+      <animatemotion dur="12s" begin="-4s" repeatcount="indefinite" rotate="auto">
+        <mpath href="#innerTrack" xlink:href="#innerTrack"></mpath>
+      </animatemotion>
+    </circle>
+  </g>
+
+  <!-- Foreground LC monogram -->
+  <g filter="url(#letterShadow)" fill="url(#letterGradient)">
+    <use href="#letterL" xlink:href="#letterL"></use>
+    <use href="#letterC" xlink:href="#letterC"></use>
+  </g>
+
+  <!-- Periodic highlight sweep -->
+  <g clip-path="url(#lettersClip)" pointer-events="none">
+    <rect class="shimmer" x="290" y="250" width="135" height="520" rx="60" fill="url(#shimmerGradient)" opacity="0"></rect>
+  </g>
+
+  <circle cx="500" cy="500" r="430" fill="none" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.5"></circle>
+</svg>
+
         
       </span>
     
@@ -586,7 +867,7 @@
   </div>
 
   <div>
-    © 2025
+    © 2026
     Learning and Control (LC) Lab
       |   Built with
     <a href="https://github.com/greenelab/lab-website-template">
