@@ -12,8 +12,8 @@ We are located in the Mechanical Engineering Building at the University of New M
 {%
   include button.html
   type="email"
-  text="lcui@unm.com"
-  link="lcui@unm.com"
+  text="lcui@unm.edu"
+  link="lcui@unm.edu"
 %}
 {%
   include button.html

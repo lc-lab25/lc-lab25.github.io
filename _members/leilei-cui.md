@@ -8,6 +8,7 @@ current: true
 aliases:
   - L. Cui
   - L Cui
+  - Leilei Cui
 links:
   email: lcui@unm.edu
   linkedin: leilei-cui-0978b3179

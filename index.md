@@ -93,6 +93,7 @@ Our team includes researchers and graduate/undergraduate students passionate abo
   text=text
 %}
 
+{% include section.html %}
 ## News and Updates
 
 - **[Month Year]** — Latest lab announcement here.
