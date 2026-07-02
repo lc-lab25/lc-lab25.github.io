@@ -3,7 +3,9 @@
 
 ## Learning and Control (LC) Lab's Website
 
-Our lab develops both foundational theory and practical tools in machine learning and control to make robots more intelligent. On the one hand, reinforcement learning provides a data-driven way for robots to learn decision-making policies through interaction. On the other hand, control theory offers rigorous, reliable design principles that guarantee stability and performance. By combining them, we enable robots to operate safely, autonomously, and efficiently in complex, real-world environments.
+Our lab develops both foundational theory and practical tools in machine learning and control to make robots more intelligent. 
+
+On the one hand, reinforcement learning provides a data-driven way for robots to learn decision-making policies through interaction. On the other hand, control theory offers rigorous, reliable design principles that guarantee stability and performance. By combining them, we enable robots to operate safely, autonomously, and efficiently in complex, real-world environments.
 
 **We are actively recruiting undergraduate and graduate students to join our team. Please see [CONTACT]({% link contact/index.md %}) for more information.**
 
@@ -19,6 +21,15 @@ Our research can be broadly organized into three parts: learning for control, co
   include button.html
   link="projects"
   text="See our projects"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+
+{%
+  include button.html
+  link="publications"
+  text="See our publications"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -81,3 +92,9 @@ Our team includes researchers and graduate/undergraduate students passionate abo
   title="Our Team"
   text=text
 %}
+
+## News and Updates
+
+- **[Month Year]** — Latest lab announcement here.
+- **[Month Year]** — New publication, award, presentation, or project update.
+- **[Month Year]** — New lab members or available positions here.
