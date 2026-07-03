@@ -99,3 +99,5 @@ Our team includes researchers and graduate/undergraduate students passionate abo
 - **[Month Year]** — Latest lab announcement here.
 - **[Month Year]** — New publication, award, presentation, or project update.
 - **[Month Year]** — New lab members or available positions here.
+
+*Last updated: {{ site.time | date: "%B %d, %Y" }}*
