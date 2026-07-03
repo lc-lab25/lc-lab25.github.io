@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h1 id="learning-based-control-for-robotics-me461561">Learning-Based Control for Robotics (ME461/561)</h1>
+
+<p><strong>Semester:</strong> Fall 2025<br>
+<strong>Instructor:</strong> Dr. Leilei Cui · <strong>Email:</strong> <a href="mailto:lcui@unm.edu">lcui@unm.edu</a><br>
+<strong>Time:</strong> Tue &amp; Thu, 9:30–10:45 AM<br>
+<strong>Location:</strong> Science &amp; Math Learning Center B79</p>
+
+<hr>
+
+<h2 id="course-description">Course Description</h2>
+<p>Learning-based methods have achieved remarkable progress in robot control, with applications spanning autonomous driving, quadrupeds, and humanoids. At the core of these advances lie <strong>optimal control</strong> and <strong>reinforcement learning (RL)</strong>. This course develops the mathematical foundations of these methodologies and demonstrates how to apply them to real robotic systems. Topics range from core RL concepts to advanced algorithms (value/policy iteration, TD/Q-learning, actor–critic, DPG/DDPG, TRPO, PPO). The course emphasizes <strong>hands-on practice</strong> so you can use these tools in your own research.</p>
+
+<h2 id="course-goals">Course Goals</h2>
+<p>Build a solid foundation in reinforcement learning and show how RL integrates with control for robotics, strengthening modeling skills, algorithmic thinking, and data-driven decision-making.</p>
+
+<h2 id="student-learning-outcomes">Student Learning Outcomes</h2>
+<p>By the end of the course, you will be able to:</p>
+<ol>
+  <li>Explain key RL concepts: value/Q functions, Bellman equations, value/policy iteration.</li>
+  <li>Implement RL algorithms (DQN, DDPG, PPO).</li>
+  <li>Apply RL to robotic control tasks (e.g., drone flight).</li>
+  <li>Interpret RL from an optimal-control perspective.</li>
+</ol>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li>Linear algebra, calculus, probability</li>
+  <li>Foundations of dynamics</li>
+  <li>Programming experience (Python)</li>
+</ul>
+
+<h2 id="course-materials">Course Materials</h2>
+<p>No required textbook. Lecture notes will be posted online. Additional readings will accompany each lecture.</p>
+
+<hr>
+
+<h2 id="assessments">Assessments</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Assessment</th>
+      <th style="text-align: center">Weight</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Final Exam</td>
+      <td style="text-align: center">35%</td>
+      <td>Tue, Dec 9, 9:30–11:30 AM</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Homework</td>
+      <td style="text-align: center">30%</td>
+      <td>2 writing assignments + 3 coding problems</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Project</td>
+      <td style="text-align: center">30%</td>
+      <td>Final report (15%) + presentation (15%)</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Participation / Attendance</td>
+      <td style="text-align: center">5%</td>
+      <td>Up to 2 unexcused absences</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 id="schedule-subject-to-change">Schedule (subject to change)</h2>
+
+<blockquote>
+  <p>Minor changes announced in class; major changes provided in writing.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Week</th>
+      <th style="text-align: left">Dates</th>
+      <th style="text-align: left">Topics</th>
+      <th style="text-align: left">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">8/19, 8/21</td>
+      <td style="text-align: left">Syllabus &amp; Introduction; Basic Concepts of RL</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">8/26, 8/28</td>
+      <td style="text-align: left">Bellman Equation; Bellman Optimality</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">9/2, 9/4</td>
+      <td style="text-align: left">Value Iteration; VI from Optimal-Control Perspective</td>
+      <td style="text-align: left">HW1 announced (Tue)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">9/9, 9/11</td>
+      <td style="text-align: left">Policy Iteration; PI from Optimal-Control Perspective</td>
+      <td style="text-align: left">HW1 due (Sun 11pm)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">9/16, 9/18</td>
+      <td style="text-align: left">Monte Carlo Learning; Stochastic Approximation &amp; SGD</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: left">9/23, 9/25</td>
+      <td style="text-align: left">Temporal-Difference Learning; Q-Learning</td>
+      <td style="text-align: left">HW2 announced (Tue)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: left">9/30, 10/2</td>
+      <td style="text-align: left">Value Function Approximation; Deep Q-Learning (DQN)</td>
+      <td style="text-align: left">HW2 due (Sun 11pm)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: left">10/7, <strong>10/9</strong>
+</td>
+      <td style="text-align: left">Robotic Application of DQN</td>
+      <td style="text-align: left">
+<strong>10/9 Fall Break</strong> · HW3 announced (Tue)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: left">10/14, 10/16</td>
+      <td style="text-align: left">Policy-Gradient Methods; Monte Carlo PG</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: left">10/21, 10/23</td>
+      <td style="text-align: left">Actor–Critic; Deterministic Policy Gradient (DPG)</td>
+      <td style="text-align: left">HW3 due (Sun 11pm)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: left">10/28, 10/30</td>
+      <td style="text-align: left">Deep Deterministic Policy Gradient (DDPG); Robotic Applications</td>
+      <td style="text-align: left">HW4 announced (Tue)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">12</td>
+      <td style="text-align: left">11/4, 11/6</td>
+      <td style="text-align: left">Trust Region Policy Optimization (TRPO I &amp; II)</td>
+      <td style="text-align: left">HW4 due (Sun 11pm)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">13</td>
+      <td style="text-align: left">11/11, 11/13</td>
+      <td style="text-align: left">Robotic Application of TRPO; Proximal Policy Optimization (PPO)</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">14</td>
+      <td style="text-align: left">11/18, 11/20</td>
+      <td style="text-align: left">Robotic Application of PPO (I &amp; II)</td>
+      <td style="text-align: left">HW5 announced (Tue)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">15</td>
+      <td style="text-align: left">11/25, <strong>11/27</strong>
+</td>
+      <td style="text-align: left">PG from Optimal-Control Perspective</td>
+      <td style="text-align: left"><strong>11/27 Thanksgiving Break</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16</td>
+      <td style="text-align: left">12/2, 12/4</td>
+      <td style="text-align: left">Project Presentations</td>
+      <td style="text-align: left">HW5 due (Sun 11pm)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">—</td>
+      <td style="text-align: left">12/8–12/12</td>
+      <td style="text-align: left">
+<strong>Final Exam</strong> (Tue, 9:30–11:30 AM)</td>
+      <td style="text-align: left">Project Report due Wed 11pm</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 id="office-hours">Office Hours</h2>
+<p><strong>Thu 10:45–11:30 AM</strong> · Mechanical Engineering Building, Room 435</p>
+
+<hr>
+
+<p><em>Last updated: July 03, 2026</em></p>
+
+</body></html>
