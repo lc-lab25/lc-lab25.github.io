@@ -974,8 +974,7 @@
     
     
   >
-    <!-- # <i class="icon fa-solid fa-"></i>Our Robots -->
-# Our Robots
+    # <i class="icon fa-solid fa-users"></i>Our Robots
 
 Our lab has access to a variety of robotic platforms, including mobile robots, manipulators, and aerial vehicles. These robots are used for research in control theory, reinforcement learning, and robotics applications.
   </section>
