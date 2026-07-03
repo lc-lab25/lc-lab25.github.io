@@ -5,7 +5,7 @@ nav:
   tooltip: Our available robots.
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Our Robots
+# {% include icon.html icon="fa-solid fa-robot" %}Our Robots
 
 Our lab has access to a variety of robotic platforms, including mobile robots, manipulators, and aerial vehicles. These robots are used for research in control theory, reinforcement learning, and robotics applications.
 
