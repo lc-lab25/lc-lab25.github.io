@@ -2,7 +2,7 @@
 title: Teaching 
 nav:
   order: 4
-  tooltip: Musings and miscellany
+  tooltip: Coures offered by the LC Lab.
 ---
 
 # {% include icon.html icon="fa-solid fa-feather-pointed" %}Teaching
