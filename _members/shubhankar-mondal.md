@@ -4,6 +4,7 @@ image: images/members/SM.jpg
 role: phd
 affiliation: Department of Electrical and Computer Engineering, University of New Mexico
 order: 2
+current: true
 aliases:
   - S. Mondal
   - S Mondal
