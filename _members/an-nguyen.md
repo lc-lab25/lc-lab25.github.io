@@ -1,6 +1,6 @@
 ---
 name: An Nguyen
-image: images/members/AN.JPEG
+image: images/members/an.JPEG
 role: phd
 affiliation: Department of Mechanical Engineering, University of New Mexico
 order: 3
