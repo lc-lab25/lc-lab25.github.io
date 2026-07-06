@@ -6,10 +6,10 @@ affiliation: Department of Mechanical Engineering, University of New Mexico
 order: 3
 current: true
 links:
-  email: annguyen2303@unm.edu
   home-page: https://thienan233.github.io/
-  orcid: 0009-0004-2384-6719
   google-scholar: DqTnhZ8AAAAJ
+  email: annguyen2303@unm.edu
+  orcid: 0009-0004-2384-6719
 ---
 
 Currently, I am pursuing a Ph.D. degree in Mechanical Engineering at University of New Mexico (2026-Now) under the supervision of Dr. Leilei Cui.
