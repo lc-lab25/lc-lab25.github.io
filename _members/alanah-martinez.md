@@ -1,9 +1,9 @@
 ---
 name: Alanah Martinez
-image: images/members/AC.jpg
+image: images/members/AM.jpg
 role: ug
 affiliation: Department of Mechanical Engineering, University of New Mexico
-order: 1
+order: 2
 current: true
 links:
   email: alanahem12@unm.edu
