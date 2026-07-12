@@ -1,6 +1,6 @@
 ---
 name: Alanah Martinez
-image: images/members/AM.jpg
+image: images/members/AC.jpg
 role: ug
 affiliation: Department of Mechanical Engineering, University of New Mexico
 order: 1
