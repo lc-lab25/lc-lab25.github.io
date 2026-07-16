@@ -10,13 +10,6 @@ On the one hand, reinforcement learning provides a data-driven way for robots to
 **We are actively recruiting undergraduate and graduate students to join our team. Please see [CONTACT]({% link contact/index.md %}) for more information.**
 
 {% include section.html %}
-## News and Updates
-
-- **[July 15, 2026]** — We are excited to announce that the LC Lab has welcomed a new Unitree G1 humanoid robot! The robot will serve as an important experimental platform for our research in machine learning, control, and intelligent robotics.
-- **[Summer 2026]**   — Rebecca joined the LC Lab as a summer researcher. During her time with the lab, she will contribute to ongoing research projects and gain hands-on experience in learning, control, and robotics.
-- **[Fall 2026]**     — An Nguyen joined the LC Lab as a new PhD student. We are delighted to welcome him to the team and look forward to his research contributions.
-
-{% include section.html %}
 ## Highlights
 
 {% capture text %}
@@ -98,5 +91,12 @@ Our team includes researchers and graduate/undergraduate students passionate abo
   title="Our Team"
   text=text
 %}
+
+{% include section.html %}
+## News and Updates
+
+- **[July 15, 2026]** — We are excited to announce that the LC Lab has welcomed a new Unitree G1 humanoid robot! The robot will serve as an important experimental platform for our research in machine learning, control, and intelligent robotics.
+- **[Summer 2026]**   — Rebecca joined the LC Lab as a summer researcher. During her time with the lab, she will contribute to ongoing research projects and gain hands-on experience in learning, control, and robotics.
+- **[Fall 2026]**     — An Nguyen joined the LC Lab as a new PhD student. We are delighted to welcome him to the team and look forward to his research contributions.
 
 *Last updated: {{ site.time | date: "%B %d, %Y" }}*
