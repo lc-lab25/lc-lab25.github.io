@@ -10,6 +10,7 @@ aliases:
   - S Mondal
 links:
   linkedin: shubhankar-mondal1leader
+  email: smondal@unm.edu
 ---
 
 Shubhankar Mondal is a Ph.D. student in the Department of Electrical and Computer Engineering at the University of New Mexico, specializing in Systems and Control. His research interests include control theory, reinforcement learning, and their applications to robotics, with a particular focus on quadruped and humanoid robotic systems, teleoperation, and intelligent autonomous control.
