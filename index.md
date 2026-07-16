@@ -96,8 +96,8 @@ Our team includes researchers and graduate/undergraduate students passionate abo
 {% include section.html %}
 ## News and Updates
 
-- **[Month Year]** — Latest lab announcement here.
-- **[Month Year]** — New publication, award, presentation, or project update.
-- **[Month Year]** — New lab members or available positions here.
+- **[July 15, 2026]** — We are excited to announce that the LC Lab has welcomed a new Unitree G1 humanoid robot! The robot will serve as an important experimental platform for our research in machine learning, control, and intelligent robotics.
+- **[Summer 2026]**   — Rebecca joined the LC Lab as a summer researcher. During her time with the lab, she will contribute to ongoing research projects and gain hands-on experience in learning, control, and robotics.
+- **[Fall 2026]**     — An Nguyen joined the LC Lab as a new PhD student. We are delighted to welcome him to the team and look forward to his research contributions.
 
 *Last updated: {{ site.time | date: "%B %d, %Y" }}*
