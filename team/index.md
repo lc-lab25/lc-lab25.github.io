@@ -28,12 +28,12 @@ Our lab is a highly engaged and collaborative team of researchers. We believe th
    filter="current != false and role == 'phd'"
 %}
 
-### Master’s Students
+<!-- ### Master’s Students
 {% include list.html
    data="members"
    component="portrait"
    filter="current != false and (role == 'ms' or role == 'master')"
-%}
+%} -->
 
 ### Undergraduate Students
 {% include list.html
