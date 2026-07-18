@@ -36,7 +36,7 @@ Our research can be broadly organized into three parts: learning for control, co
 
 {%
   include feature.html
-  image="images/research.svg"
+  image="images/research_n.svg"
   link="projects"
   title="Our Research"
   text=text
