@@ -1,7 +1,6 @@
 ---
 title: GO2 Quadruped robot
 image: images/robots/GO2/go2.png
-description: test
 ---
 The Unitree Go2 is a four-legged quadruped robot designed for mobility, perception, autonomous navigation, and legged locomotion research.
 
