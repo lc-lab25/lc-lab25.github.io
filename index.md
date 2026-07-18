@@ -30,7 +30,6 @@ Our research can be broadly organized into three parts: learning for control, co
   text="See our publications"
   icon="fa-solid fa-arrow-right"
   flip=true
-  style="bare"
 %}
 
 {% endcapture %}
@@ -53,7 +52,6 @@ We offer courses in the areas of dynamics & control and robotics.
   text="Browse our teaching"
   icon="fa-solid fa-arrow-right"
   flip=true
-  style="bare"
 %}
 
 {% endcapture %}
@@ -77,7 +75,6 @@ Our team includes researchers and graduate/undergraduate students passionate abo
   text="Meet our team"
   icon="fa-solid fa-arrow-right"
   flip=true
-  style="bare"
 %}
 
 {% endcapture %}
