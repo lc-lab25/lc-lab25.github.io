@@ -1,19 +1,29 @@
-<svg width="780" height="450" viewBox="0 0 780 450" xmlns="http://www.w3.org/2000/svg">
+<svg width="780" height="450" viewBox="0 0 780 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Learning, Control, and Robotics Integration</title>
+  <desc id="desc">A diagram showing learning and control informing one another and both contributing to robotics.</desc>
+
   <defs>
-    <!-- colors -->
     <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#115e92"></stop>
-      <stop offset="100%" stop-color="#0b314c"></stop>
+      <stop offset="0%" stop-color="#115e92"/>
+      <stop offset="100%" stop-color="#0b314c"/>
     </linearGradient>
 
-    <!-- drop shadow -->
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0b314c" flood-opacity="0.25"></feDropShadow>
+    <filter id="shadow" x="-25%" y="-30%" width="150%" height="165%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" result="blur"/>
+      <feOffset in="blur" dx="0" dy="6" result="offsetBlur"/>
+      <feColorMatrix in="offsetBlur" type="matrix"
+        values="0 0 0 0 0.043
+                0 0 0 0 0.192
+                0 0 0 0 0.298
+                0 0 0 0.24 0" result="shadowColor"/>
+      <feMerge>
+        <feMergeNode in="shadowColor"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
-    <!-- arrowhead -->
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,7 L9,3.5 z" fill="#115e92"></path>
+      <path d="M0,0 L0,7 L9,3.5 z" fill="#115e92"/>
     </marker>
   </defs>
 
@@ -21,58 +31,57 @@
     .node-text {
       fill: #ffffff;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 21px;          /* increased from 19px */
+      font-size: 21px;
       font-weight: 650;
       text-anchor: middle;
       dominant-baseline: middle;
       letter-spacing: 0.03em;
     }
     .arrow {
+      fill: none;
       stroke: #115e92;
       stroke-width: 3.2;
+      stroke-linecap: round;
       marker-end: url(#arrow);
+    }
+    .title {
+      fill: #394663;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16.5px;
+      font-weight: 500;
+      text-anchor: middle;
     }
   </style>
 
-  <!-- background decoration -->
-  <rect x="0" y="0" width="780" height="450" rx="32" ry="32" fill="#f5f7fa"></rect>
-  <circle cx="95" cy="60" r="35" fill="#dfefff" opacity="0.6"></circle>
-  <circle cx="690" cy="70" r="45" fill="#d6e5ff" opacity="0.35"></circle>
-  <circle cx="715" cy="365" r="65" fill="#e3f2ff" opacity="0.2"></circle>
+  <!-- Background -->
+  <rect width="780" height="450" rx="32" fill="#f5f7fa"/>
+  <circle cx="80" cy="63" r="34" fill="#dfefff" opacity="0.55"/>
+  <circle cx="704" cy="67" r="43" fill="#d6e5ff" opacity="0.32"/>
+  <circle cx="718" cy="377" r="58" fill="#e3f2ff" opacity="0.18"/>
 
-  <!-- top left: Learning -->
+  <text class="title" x="390" y="30">Learning–Control–Robotics Integration</text>
+
+  <!-- Nodes: positioned farther apart -->
   <g filter="url(#shadow)">
-    <rect x="90" y="60" width="210" height="82" rx="41" ry="41" fill="url(#nodeGrad)"></rect>
-    <text class="node-text" x="195" y="101">LEARNING</text>
+    <rect x="55" y="88" width="220" height="84" rx="42" fill="url(#nodeGrad)"/>
+    <text class="node-text" x="165" y="130">LEARNING</text>
   </g>
 
-  <!-- top right: Control -->
   <g filter="url(#shadow)">
-    <rect x="480" y="60" width="210" height="82" rx="41" ry="41" fill="url(#nodeGrad)"></rect>
-    <text class="node-text" x="585" y="101">CONTROL</text>
+    <rect x="505" y="88" width="220" height="84" rx="42" fill="url(#nodeGrad)"/>
+    <text class="node-text" x="615" y="130">CONTROL</text>
   </g>
 
-  <!-- bottom: Robotics -->
   <g filter="url(#shadow)">
-    <rect x="270" y="290" width="240" height="88" rx="44" ry="44" fill="url(#nodeGrad)"></rect>
-    <text class="node-text" x="390" y="334">ROBOTICS</text>
+    <rect x="270" y="320" width="240" height="88" rx="44" fill="url(#nodeGrad)"/>
+    <text class="node-text" x="390" y="364">ROBOTICS</text>
   </g>
 
-  <!-- arrows -->
-  <!-- Learning -> Control -->
-  <line class="arrow" x1="300" y1="101" x2="480" y2="101"></line>
+  <!-- Learning and Control communicate via separated arcs -->
+  <path class="arrow" d="M 278 112 C 340 77, 440 77, 498 112"/>
+  <path class="arrow" d="M 502 149 C 440 184, 340 184, 282 149"/>
 
-  <!-- Control -> Learning (slightly lower so they don't overlap) -->
-  <line class="arrow" x1="480" y1="128" x2="300" y2="128"></line>
-
-  <!-- Learning -> Robotics (curved) -->
-  <path class="arrow" d="M 195 145 C 205 200, 260 240, 330 280" fill="none"></path>
-
-  <!-- Control -> Robotics (curved) -->
-  <path class="arrow" d="M 585 145 C 575 200, 520 240, 450 280" fill="none"></path>
-
-  <!-- title (optional) -->
-  <text x="390" y="28" text-anchor="middle" style="font-family:system-ui, sans-serif; font-size:16.5px; fill:#446; font-weight:500;">
-    Learning–Control–Robotics Integration
-  </text>
+  <!-- Both feed into Robotics; endpoints are separated -->
+  <path class="arrow" d="M 225 176 C 245 235, 292 281, 350 312"/>
+  <path class="arrow" d="M 555 176 C 535 235, 488 281, 430 312"/>
 </svg>

@@ -10,4 +10,4 @@ The Go2 includes onboard sensing and perception capabilities that allow it to ob
 {% include section.html %}
 
 Demonstration videos and research results will be added as our work with the Unitree GO2 progresses.
-Add a demonstration video here. Example: <video controls width="100%"> <source src="{{ '/videos/WheeledBipedal.mp4' | relative_url }}" type="video/mp4"> Your browser does not support the video element. </video>
+<!-- Add a demonstration video here. Example: <video controls width="100%"> <source src="{{ '/videos/WheeledBipedal.mp4' | relative_url }}" type="video/mp4"> Your browser does not support the video element. </video> -->
