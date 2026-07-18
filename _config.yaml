@@ -2,8 +2,8 @@
 title: Learning and Control (LC) Lab 
 subtitle: 
 description: By integrating reinforcement learning with control theory, we build intelligent robots that can operate safely and autonomously in complex, dynamic environments.
-header: images/background.jpg
-footer: images/background.jpg
+header: images/logo.svg
+footer: imageslogo.svg
 proofer: false
 
 # site social media and other links
