@@ -16,20 +16,18 @@ Our lab has access to a variety of robotic platforms, including mobile robots, m
   include card.html
   image="images/robots/G1/g1.jpg"
   link="robots/G1.html"
-  title="Unitree G1 Humanoid robot"
-  subtitle="A cool card"
-  description="A cool description"
-  tooltip="See more"
-  style="small"
+  title="Unitree G1 Humanoid Robot"
+  subtitle="Humanoid Robotics Research Platform"
+  description="A general-purpose humanoid robot used for research in locomotion, whole-body control, reinforcement learning, manipulation, and embodied intelligence."
+  tooltip="Learn more about the Unitree G1"
 %}
 
 {%
   include card.html
   image="images/robots/GO2/go2.png"
   link="robots/GO2.html"
-  title="Unitree G1 Humanoid robot"
-  subtitle="A cool card"
-  description="A cool description"
-  tooltip="See more"
-  style="small"
+  title="Unitree Go2 Quadruped Robot"
+  subtitle="Legged Robotics Research Platform"
+  description="A quadruped robot used for research in autonomous navigation, legged locomotion, robot perception, reinforcement learning, and learning-based control."
+  tooltip="Learn more about the Unitree Go2"
 %}
