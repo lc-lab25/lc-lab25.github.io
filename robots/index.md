@@ -12,4 +12,24 @@ Our lab has access to a variety of robotic platforms, including mobile robots, m
 {% include section.html %}
 
 ## List of currently available robots
-<!-- {% include list.html data="courses" component="card"%} -->
+{%
+  include card.html
+  image="images/robots/G1/g1.jpg"
+  link="robots/G1.html"
+  title="Unitree G1 Humanoid robot"
+  subtitle="A cool card"
+  description="A cool description"
+  tooltip="See more"
+  style="small"
+%}
+
+{%
+  include card.html
+  image="images/robots/GO2/go2.png"
+  link="robots/GO2.html"
+  title="Unitree G1 Humanoid robot"
+  subtitle="A cool card"
+  description="A cool description"
+  tooltip="See more"
+  style="small"
+%}

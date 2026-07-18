@@ -28,7 +28,7 @@ We are located in the Mechanical Engineering Building at the University of New M
 We’re always excited to meet self-motivated people with a passion for research. Join us to work on [interesting topics]({% link projects/index.md %}) alongside our active [team members]({% link team/index.md %}) in the lab.
 
 ### PhD Position
-We have **one PhD opening for Fall 2026**. If you’re interested, please email Dr. Cui with:
+We have **one PhD opening for Fall {{ site.time | date: "%Y" }}**. If you’re interested, please email Dr. Cui with:
 - a brief note on why you’re interested,
 - your CV, and
 - your transcript (include undergraduate/graduate grades).
