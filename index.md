@@ -1,7 +1,7 @@
 ---
 ---
 
-## Learning and Control (LC) Lab's Website
+## Advancing Intelligent Robotics Through Learning and Control
 
 Our lab develops both foundational theory and practical tools in machine learning and control to make robots more intelligent. 
 

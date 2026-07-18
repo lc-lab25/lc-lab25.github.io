@@ -40,6 +40,12 @@ defaults:
       type: "courses"
     values:
       layout: post
+  # markdown files in /_robots
+  - scope:
+      type: "robots"
+    values:
+      layout: post
+
 
 collections:
   # generate page for each member
@@ -51,6 +57,9 @@ collections:
   # generate page for each course
   courses:
     output: true
+  robots:
+    output: true
+
 
 # jekyll plugins
 plugins:
