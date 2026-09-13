@@ -23,7 +23,7 @@ Our lab has access to a variety of robotic platforms, including mobile robots, m
 
 {%
   include card.html
-  image="images/robots/GO2/unitreego2.webp"
+  image="images/robots/GO2/go2.gif"
   title="Unitree Go2 Edu Quadruped Robot"
   subtitle="Legged Robotics Research Platform"
   description="A quadruped robot used for research in autonomous navigation, legged locomotion, robot perception, reinforcement learning, and learning-based control"
@@ -38,7 +38,7 @@ Our lab has access to a variety of robotic platforms, including mobile robots, m
   image="images/robots/COMP1/comp1.png"
   title="Dell Computer"
   subtitle="Powerful computer for running simulations and robotics applications"
-  description="A small, powerful computer that lets you run multiple neural networks in parallel for applications in robotics, computer vision, and machine learning"
+  description="Intel Core Ultra 9 285K CPU, 128 GB of RAM, and an NVIDIA GeForce RTX 5090 GPU with 32 GB of memory."
   tooltip="Learn more about the Dell Computer"
 %}
 
@@ -47,7 +47,7 @@ Our lab has access to a variety of robotic platforms, including mobile robots, m
   image="images/robots/COMP2/comp2.png"
   title="Fractal Computer"
   subtitle="Powerful computer for running simulations and robotics applications"
-  description="A small, powerful computer that lets you run multiple neural networks in parallel for applications in robotics, computer vision, and machine learning"
+  description="Intel Core Ultra 9 285K CPU, 128 GB of RAM, and an NVIDIA GeForce RTX 5090 GPU with 32 GB of memory."
   tooltip="Learn more about the Fractal Computer"
 %}
 
