@@ -198,7 +198,8 @@
   plugin: orcid.py
   file: orcid-leilei.yaml
 - id: doi:10.1137/1.9781611977745.3
-  title: Learning-Based Control of Continuous-Time Systems Using Output Feedback<sup>*</sup>
+  title: "Learning-Based Control of Continuous-Time Systems Using Output Feedback\n\
+    \                    <sup>*</sup>"
   authors:
   - Leilei Cui
   - Zhong-Ping Jiang
