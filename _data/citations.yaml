@@ -93,21 +93,6 @@
   updated: 2025-11-02
   plugin: orcid.py
   file: orcid-leilei.yaml
-- id: doi:10.48550/arXiv.2509.24277
-  title: Small-Covariance Noise-to-State Stability of Stochastic Systems and Its Applications
-    to Stochastic Gradient Dynamics
-  authors:
-  - Leilei Cui
-  - Zhong-Ping Jiang
-  - Eduardo D. Sontag
-  publisher: arXiv
-  date: '2025-01-01'
-  link: https://doi.org/g98xm3
-  orcid: 0000-0001-8031-7638
-  leilei-cui: true
-  updated: 2025-11-02
-  plugin: orcid.py
-  file: orcid-leilei.yaml
 - id: doi:10.1016/j.trb.2024.103026
   title: 'Automated lane changing control in mixed traffic: An adaptive dynamic programming
     approach'
